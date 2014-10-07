@@ -1,0 +1,140 @@
+GENERAL STEPS
+=============
+
+Initialize repo
+> git init
+
+Show status 
+> git status
+
+Add files
+> git add file.extension
+
+TO SEE DIFFERENCES BETWEEN TO THE REPO AND OUR LATEST COMMIT
+> git diff HEAD
+
+GET RID OF ALL THE CHANGES SINCE THE LAST COMMIT FOR octocat.txt
+> git checkout -- octocat.txt
+
+COMMON STEPS
+===========
+
+Clone repository
+> git clone username@host:/path/to/repository
+
+Download files (origin is repo, master is branch)
+> git pull origin master
+
+To add changes (files)
+
+> git add file.ext
+
+Commit to local repository (origin is repo, master is branch)
+> git commit -m "comentary 001"
+
+To put your changes in the main repository
+> git push -u origin master
+
+TO SOLVE CONFLICTS
+=================
+
+If you want to take modification of the main repository
+> git
+
+If you want to take modification of the local repository
+> 
+
+If you want to force push 
+> git commmit -am "comment 001"
+
+CREATE A NEW REPOSITORY IN THE COMMAND LINE
+===========================================
+
+touch README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/zeellos/repositorioGit.git
+git push -u origin master
+
+PRACTICE
+========
+
+INITIALIZING
+> git init
+
+CHECKING THE STATUS
+> git status
+
+ADDING & COMMITING
+> git status 
+
+ADDING CHANGES (FILES)
+> git add octocat.txt
+
+CHECKING CHANGES
+> git status
+
+COMMITING
+> git commit -m "Add cute octocat story"
+
+ADDING CHANGES (FILES)
+> git add '*.txt'
+
+CHECKING FOR CHANGES
+> git status
+
+HISTORY
+> git log
+
+ADD REMOTE REPOSITORIES
+> git remote add origin http://github.com/try-git/try_git.git
+
+TO PUSH OUR LOCAL COMMITS IN THE MAIN REPOSITORY. WHERE origin
+IS THE REPOSITORY AND master IS THE MAIN BRANCH
+> git push -u origin master
+
+GET LATEST MODIFICATION IN THE REPO
+> git pull origin master
+
+TO SEE DIFFERENCES BETWEEN TO THE REPO AND OUR LATEST COMMIT
+> git diff HEAD
+
+ADD TO STAGE FILE octofamily/octodog.txt
+> git add octofamily/octodog.txt
+
+SHOW STAGED CHANGES YOU JUST DO
+> git diff --staged
+
+UNSTAGE FILES 
+> git reset octofamily/octodog.txt
+
+GET RID OF ALL THE CHANGES SINCE THE LAST COMMIT FOR octocat.txt
+> git checkout -- octocat.txt
+
+CREATE BRANCH clean_up
+> git branch clean_up
+
+SWITCHING BRANCHES master TO clean_up
+> git checkout clean_up
+
+INSTEAD OF MAKE 2 STEPS ABOVE, IT CAN BE MADE IT BY 1 STEP AS FOLLOW
+> git checkout -b clean_up
+
+REMOVING ALL THE THINGS IN THE BRANCH clean_up
+> git rm '*.txt'
+
+COMMITING BRANCH CHANGES
+> git commit -m "Remove all the cats"
+
+SWITCHING BACK TO master REPO
+> git checkout master
+
+PREPARING TO MERGE
+> git merge clean_up
+
+KEEPING THINGS CLEAN (DELETING BRANCH clean_up)
+> git branch -d clean_up
+
+THE FINAL PUSH
+> git push
